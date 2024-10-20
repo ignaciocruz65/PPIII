@@ -40,6 +40,8 @@ body {
   text-align: center;
 }
 
+
+/* line red h2 */
 .heading_container h2 {
   font-weight: bold;
   
@@ -47,7 +49,6 @@ body {
   padding-bottom: 20px;
   text-transform: uppercase;
 }
-
 .heading_container h2::before {
   content: "";
   position: absolute;
@@ -60,7 +61,7 @@ body {
           transform: translateX(-50%);
 }
 
-/*header section*/
+
 .hero_area {
   height: 100vh;
   display: -webkit-box;
@@ -97,18 +98,19 @@ body {
 .header_section .nav_container {
   margin: 0 auto;
 }
-
+/* text nav  */
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
-  margin: 10px 30px;
-  padding: 0;
+  margin: 10px 40px;
+  padding: 5px;
   padding-bottom: 10px;
   color: #ffffff;
   text-align: center;
   position: relative;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 15px;
 }
 
+/* line red nav */
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link::after {
   display: none;
   content: "";
@@ -117,10 +119,9 @@ body {
   bottom: 0;
   width: 100%;
   height: 3px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #ffffff;
 }
-
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active a::after, .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item:hover a::after {
   display: block;
   background-color: #ff2953;
@@ -135,29 +136,28 @@ a:focus {
 a:hover,
 a:focus {
   color: initial;
-}
+} 
 
 .btn,
 .btn:focus {
   outline: none !important;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-
+} 
 
 
 
 .navbar-brand {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flexbox;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
 }
 
+/* klevron tittle */
 .navbar-brand span {
   font-size: 22px;
   text-transform: uppercase;
@@ -171,17 +171,16 @@ a:focus {
 
 
 .nav_cart-btn {
-  background: fixed;
+  background: none;
   border: none;
-  margin-left: 5%; /* Espacio entre el botón de búsqueda y el carrito */
+  margin-left: 10%;
+  padding-top: 1px; /* Espacio entre el botón de búsqueda y el carrito */
 }
 
 .nav_cart-btn img {
   width: 50px; /* Ajusta el tamaño del icono del carrito */
   height: auto;
 }
-
-/*end header section*/
 
 
 
@@ -198,10 +197,6 @@ a:focus {
   color: #ffffff;
 }
 
-.slider_section #carouselExampleIndicators {
-  width: 100%;
-
-}
 
 .slider_section .row {
   -webkit-box-align: center;
@@ -209,6 +204,10 @@ a:focus {
           align-items: center;
 }
 
+.slider_section #carouselExampleIndicators {
+  width: 100%;
+
+}
 .slider_section .box {
   margin: 125px 0;
 }

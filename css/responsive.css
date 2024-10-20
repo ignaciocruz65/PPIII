@@ -1,19 +1,18 @@
-@media (max-width: 1120px) {
 
+
+@media (max-width: 1120px) {
+    
     .hero_area {
         height: 100vh;
+        padding-left: 15px;
+        padding-right: 15px;
     }
-
-    .custom_nav-container .nav_search-btn {
-        background-position: center;
-        margin-top: 10px;
-    }
-
+    
     .slider_section {
         padding-top: 45px;
         padding-bottom: 75px;
         width: 100%;
-        height: 100vh;
+        height: 100%
     }
 
     .info_items {
@@ -26,10 +25,6 @@
         height: 100vh;
     }
 
-    .custom_nav-container .nav_search-btn {
-        background-position: center;
-        margin-top: 10px;
-    }
 
     .slider_section {
         padding-top: 45px;
@@ -39,6 +34,8 @@
     .info_items {
         width: 100%;
     }
+
+    
 }
 
 @media (max-width: 768px) {
