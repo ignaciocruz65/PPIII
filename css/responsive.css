@@ -1,6 +1,6 @@
 
 
-@media (max-width: 1120px) {
+@media (max-width: 1440px) {
     
     .hero_area {
         height: 100vh;
@@ -18,13 +18,28 @@
     .info_items {
         width: 100%;
     }
+
+    
+    .supplementsControl .box {
+        margin-top: 40%;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+    } 
+    
+    
+    .supplementsControl .box .img_supp{
+        width: 100%;
+    }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .hero_area {
         height: 100vh;
     }
-
+    
 
     .slider_section {
         padding-top: 45px;
@@ -35,7 +50,22 @@
         width: 100%;
     }
 
-    
+    .supplementsControl .box {
+        margin-top: 55px;
+        display: flex;
+        width: 100%;
+        flex: 1 1 auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+
+    }
+
+    .supplementsControl .box .img_supp{
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -60,6 +90,25 @@
     .contact_section button {
         margin: 45px auto 0 auto;
     }
+    .supplementsControl .box {
+        margin-top: 55px;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+    } 
+    
+    
+
+    .supplementsControl .box .img_supp{
+        width: 100%;
+        height: auto;
+    }
+
+
 }
 
 
@@ -72,13 +121,5 @@
 @media (max-width: 425px) {
     .slider_section .detail-box h1 {
         letter-spacing: .3rem;
-    }
-}
-
-@media (max-width: 360px) {}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1170px;
     }
 }
