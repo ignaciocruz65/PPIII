@@ -4,6 +4,8 @@ body {
   background-color: #ffffff;
 }
 
+
+
 .layout_padding {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -44,7 +46,6 @@ body {
 /* line red h2 */
 .heading_container h2 {
   font-weight: bold;
-
   position: relative;
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -125,6 +126,8 @@ body {
   background-color: #ffffff;
 }
 
+
+
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active a::after,
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item:hover a::after {
   display: block;
@@ -154,7 +157,7 @@ a:focus {
 .navbar-brand {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flexbox;
+  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -179,12 +182,11 @@ a:focus {
   border: none;
   margin-left: 10%;
   padding-top: 1px;
-  /* Espacio entre el botón de búsqueda y el carrito */
+
 }
 
 .nav_cart-btn img {
   width: 50px;
-  /* Ajusta el tamaño del icono del carrito */
   height: auto;
 }
 
@@ -424,7 +426,7 @@ a:focus {
 }
 
 .contact_section .heading_container h2::before {
-  text-align: left;
+  text-align: center;
   left: 0;
   -webkit-transform: none;
   transform: none;
@@ -434,6 +436,7 @@ a:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
 }
 
 .contact_section .img-box img {
@@ -441,7 +444,7 @@ a:focus {
 }
 
 .contact_section .form_container {
-  padding: 45px 0 45px 15px;
+  padding: 45px 0px 45px 45px;
 }
 
 .contact_section input {
@@ -521,15 +524,15 @@ a:focus {
   background-image:   
   linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
   url("../images/bg-supplement.png");
-  padding: 20px; /* Añade un poco de espacio interno */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  transition: transform 0.3s, box-shadow 0.3s; /* Transición suave para efectos */
+  padding: 20px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s, box-shadow 0.3s; 
   
 }
 
 .supplementsControl .box:hover {
-  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); 
 }
 
 .supplementsControl .box .img_supp{
@@ -539,17 +542,54 @@ a:focus {
 }
 
 .supplementsControl h5{
-  font-size: 1.5rem; /* Tamaño de fuente para el título */
-  color: #ffffff; /* Color del texto */
+  font-size: 1.5rem; 
+  color: #ffffff;
   font-weight: lighter;
   margin-bottom: 15px; /
 }
 
 .supplementsControl .box p{
-  font-size: 1rem; /* Tamaño de fuente para el texto */
-  color: #00e658; /* Color del texto */
-  line-height: 1.5; /* Altura de línea para mejor legibilidad */
+  font-size: 1rem; 
+  color: #00e658; 
+  line-height: 1.5; 
   font-weight: bolder;
+}
+
+.supplementsControl .box button{
+
+  color: #ffffff;
+  background-color: #ff2953;
+  transition: background-color 0.1s, color 0.1s; 
+  
+}
+
+.supplementsControl .box button:active{
+  background-color: #28a745; 
+  color: rgb(0, 0, 0);
+}
+
+
+
+.cart_area {  
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-inline-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000000;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.cart_area h2 {
+  color: #ffffff;
+
 }
 
 
@@ -563,8 +603,8 @@ a:focus {
 }
 
 .info_items {
-  width: 70%;
-  margin: 0 auto;
+  width: 10%;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,8 +629,9 @@ a:focus {
 }
 
 .info_items .item .img-box {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 40px;
+  margin-top: 10px;
   border-radius: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -621,6 +662,10 @@ a:focus {
   background-image: url(../images/envelope-white.png);
 }
 
+
+
+
+
 /* footer section*/
 .footer_section {
   background-color: #0a0a0a;
@@ -639,4 +684,3 @@ a:focus {
 }
 
 /* end footer section*/
-/*# sourceMappingURL=style.css.map */
